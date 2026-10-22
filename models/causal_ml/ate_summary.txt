@@ -1,0 +1,1 @@
+Estimated Average Treatment Effect (ATE): 18.80266755704401
