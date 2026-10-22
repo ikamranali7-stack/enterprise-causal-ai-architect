@@ -1,32 +1,14 @@
-# Enterprise Causal AI & Econometric Decision Architecture
+# Enterprise Causal AI Architect & Decision Engine
 
-> **Decision Intelligence Platform for High-LTV Enterprise Operations**  
-> *Translating transactional data into counterfactual inference, treatment effect modeling, and C-Suite executive dashboards.*
-
----
-
-## Executive Summary
-
-Standard machine learning models excel at **correlation** ($P(Y\vert{}X)$), but fail at **causation** ($P(Y\vert{}do(X))$). When enterprise decision-makers adjust pricing, reallocate ad spend, or modify customer retention campaigns, predictive models break due to policy-change shifts and confounding bias.
-
-This repository hosts a production-grade infrastructure designed to execute **Causal Decision Intelligence**:
-* **Double Machine Learning (DML) & Instrumental Variables** for unbiased price elasticity estimation.
-* **Difference-in-Differences (DiD) & Synthetic Controls** for enterprise-wide policy evaluation.
-* **Power BI Semantic Layer Integration** for continuous executive monitoring of Marginal Treatment Effects (MTE).
+An end-to-end econometric causal inference and executive analytics pipeline designed to eliminate confounding bias, isolate true customer uplift, and forecast Incremental ARR for C-suite stakeholders.
 
 ---
 
-## Architecture Overview
+## 🎯 Executive Overview
+Traditional predictive machine learning (XGBoost, Random Forests) measures **correlation, not causation**. This often leads enterprises to waste growth capital, marketing budgets, and retention incentives on customers who would have converted anyway ("sure things" vs. "persuadables").
 
-```text
-├── .github/workflows/      # Automated CI/CD validation pipelines
-├── data/
-│   ├── raw/                # Immutable raw transactional logs
-│   └── processed/          # Causal-ready feature stores
-├── models/
-│   ├── econometric/        # Fixed Effects, DiD, and Panel models (statsmodels)
-│   └── causal_ml/          # DML, Causal Forests, Uplift models (EconML, DoWhy)
-├── notebooks/              # Diagnostic notebooks & sensitivity stress-testing
-├── powerbi/                # DAX measure definitions & semantic schema
-├── src/                    # Modular Python engines
-└── tests/                  # Automated statistical unit tests
+This repository implements a production-grade **Causal AI Consultancy Stack** that bridges advanced econometric modeling (**DoWhy**, **EconML Double Machine Learning**) with executive-facing business intelligence (**Power BI**). It enables CFOs and CROs to simulate counterfactual financial interventions and measure true net-new financial returns before risking capital.
+
+---
+
+## 🛠️ Technical Architecture & Tech Stack
