@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier
+from sklearn.ensemble import RandomForestRegressor
 from econml.dml import CausalForestDML
 
 def run_churn_causal_analysis():
@@ -29,7 +29,7 @@ def run_churn_causal_analysis():
     # Fit Heterogeneous Treatment Effect Model (Causal Forest DML)
     model = CausalForestDML(
         model_y=RandomForestRegressor(n_estimators=100, random_state=42),
-        model_t=RandomForestClassifier(n_estimators=100, random_state=42),
+        model_t=RandomForestRegressor(n_estimators=100, random_state=42),
         n_estimators=100,
         random_state=42
     )
